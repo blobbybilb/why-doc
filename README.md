@@ -58,3 +58,8 @@ app.use("/docs", serveStatic({ path: "./docs.html" })) // serve the static html 
 And get something like:
 
 <img width="400" alt="Screenshot 2023-06-08 at 1 04 29 PM" src="https://github.com/blobbybilb/why-doc/assets/58201828/6606a584-a816-41e6-954e-18073b5950ae">
+
+
+## License
+
+GNU LGPLv3
