@@ -4,6 +4,11 @@ A simple API docs generator for simple APIs.
 
 ## Usage (example with [Hono](https://hono.dev))
 
+Import:
+```ts
+
+```
+
 Initialize:
 ```ts
 const doc = WhyDoc({
