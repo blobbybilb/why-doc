@@ -38,13 +38,13 @@ export function Doc(config?: DocConfig) {
       postParams?: Params
     } = {},
   ) => {
-    docsData[path] = {
+    docsData[(config.basePath ?? "") + path] = {
       method: (params.postParams ? "POST" : "GET"),
-      path: path,
+      path: (config.basePath ?? "") + path,
       doctext: doctext,
       getParams: params.getParams ?? {},
       postParams: params.postParams ?? {},
     }
-    return path
+    return (config.basePath ?? "") + path
   }
 }
