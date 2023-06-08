@@ -7,7 +7,7 @@ A simple API docs generator for simple APIs.
 Initialize:
 ```ts
 const doc = WhyDoc({
-  title: "test",
+  title: "Test API Docs",
   basePath: "/api", // optional
 })
 ```

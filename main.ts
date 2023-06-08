@@ -1,9 +1,9 @@
 import { Hono } from "https://deno.land/x/hono@v3.2.5/mod.ts"
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts"
-import { Doc, genDocs } from "./doc.ts"
+import { genDocs, WhyDoc } from "./doc.ts"
 import { serveStatic } from "https://deno.land/x/hono@v3.2.5/middleware.ts"
 
-const doc = Doc({
+const doc = WhyDoc({
   title: "Test API Docs",
   basePath: "/api", // optional
 })

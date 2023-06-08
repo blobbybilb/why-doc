@@ -31,7 +31,7 @@ export async function genDocs(outputPath = "./docs.html") {
   await Deno.writeTextFile(outputPath, docs!)
 }
 
-export function Doc(config?: DocConfig) {
+export function WhyDoc(config?: DocConfig) {
   if (!config) {
     return (path: string) => path
   }
