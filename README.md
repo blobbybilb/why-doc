@@ -9,7 +9,7 @@ Import:
 import {
   genDocs,
   WhyDoc,
-} from "https://raw.githubusercontent.com/blobbybilb/why-doc/main/doc.ts" // better URL coming soon
+} from "https://raw.githubusercontent.com/blobbybilb/why-doc/main/doc.ts"
 ```
 
 Initialize:
