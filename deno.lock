@@ -146,6 +146,8 @@
     "https://deno.land/x/hono@v3.2.5/utils/types.ts": "634ee00ae271302b2decf73edb91d843feb9fc7bfd43ea643d1b14861914577d",
     "https://deno.land/x/hono@v3.2.5/utils/url.ts": "40a4192da0a655a124c95063e0ab3924432805fcf45a3ffc8e4458029d609bbc",
     "https://deno.land/x/hono@v3.2.5/validator/index.ts": "6c986e8b91dcf857ecc8164a506ae8eea8665792a4ff7215471df669c632ae7c",
-    "https://deno.land/x/hono@v3.2.5/validator/validator.ts": "e52183ddf8cefc3cfe2788802fe6ce766df8ac904df485107b01cbcca167dbad"
+    "https://deno.land/x/hono@v3.2.5/validator/validator.ts": "e52183ddf8cefc3cfe2788802fe6ce766df8ac904df485107b01cbcca167dbad",
+    "https://raw.githubusercontent.com/blobbybilb/why-doc/main/doc.ts": "d6d5a947b7d464dd468c192ad911ad2125206db8164f2a94f6c0a994ac71331b",
+    "https://raw.githubusercontent.com/blobbybilb/why-doc/main/template.ts": "2fe1f1a27819202b026c88c927764821481aaf63ffc4ba7529f2ab6652946638"
   }
 }

@@ -1,6 +1,10 @@
 import { Hono } from "https://deno.land/x/hono@v3.2.5/mod.ts"
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts"
-import { genDocs, WhyDoc } from "./doc.ts"
+// import { genDocs, WhyDoc } from "./doc.ts"
+import {
+  genDocs,
+  WhyDoc,
+} from "https://raw.githubusercontent.com/blobbybilb/why-doc/main/doc.ts"
 import { serveStatic } from "https://deno.land/x/hono@v3.2.5/middleware.ts"
 
 const doc = WhyDoc({
