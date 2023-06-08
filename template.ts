@@ -7,27 +7,34 @@ export default `<!DOCTYPE html>
     <title>Test API Docs</title>
   </head>
   <body class="container">
-    <h1>Test API Docs</h1>
-    <% Object.keys(it).forEach(function(path) { %>
+    <h1><%= it["title"] %></h1>
+    <% Object.keys(it["docsData"]).forEach(function(path) { %>
     <article>
-      <h3><kbd><%= it[path]["method"] %></kbd> <code><%= path %></code></h3>
+      <h3>
+        <kbd><%= it["docsData"][path]["method"] %></kbd>
+        <code><%= path %></code>
+      </h3>
       <details>
         <summary><b>Details</b></summary>
-        <p><%= it[path]["doctext"] %></p>
-        <% if (!(Object.keys(it[path]["getParams"]).length === 0)) { %>
+        <p><%= it["docsData"][path]["doctext"] %></p>
+        <% if (!(Object.keys(it["docsData"][path]["getParams"]).length === 0)) {
+        %>
         <h4>GET Parameters</h4>
-        <% Object.keys(it[path]["getParams"]).forEach(function(prop) { %>
+        <% Object.keys(it["docsData"][path]["getParams"]).forEach(function(prop)
+        { %>
         <p>
           <code><%= prop %></code>
-          <span><%= it[path]["getParams"][prop] %></span>
+          <span><%= it["docsData"][path]["getParams"][prop] %></span>
         </p>
-        <% }) %> <% } %> <% if (!(Object.keys(it[path]["postParams"]).length ===
-        0)) { %>
+        <% }) %> <% } %> <% if
+        (!(Object.keys(it["docsData"][path]["postParams"]).length === 0)) { %>
         <h4>POST Parameters</h4>
-        <% Object.keys(it[path]["postParams"]).forEach(function(prop) { %>
+        <%
+        Object.keys(it["docsData"][path]["postParams"]).forEach(function(prop) {
+        %>
         <p>
           <code><%= prop %></code>
-          <span><%= it[path]["postParams"][prop] %></span>
+          <span><%= it["docsData"][path]["postParams"][prop] %></span>
         </p>
         <% }) %> <% } %>
       </details>

@@ -4,7 +4,7 @@ import { Doc, genDocs } from "./doc.ts"
 import { serveStatic } from "https://deno.land/x/hono@v3.2.5/middleware.ts"
 
 const doc = Doc({
-  title: "test",
+  title: "Test API Docs",
   basePath: "/api", // optional
 })
 
@@ -33,8 +33,7 @@ app.get(
   (c) => c.text(c.req.query("name")!),
 )
 
-app.use("/docs", serveStatic({ path: "./docs.html" }))
-
 genDocs()
+app.use("/docs", serveStatic({ path: "./docs.html" }))
 
 serve(app.fetch)
