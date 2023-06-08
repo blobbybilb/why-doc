@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno task copy && deno run --watch --allow-net --allow-write main.ts",
+    "dev": "deno task copy && deno run --watch --allow-net --allow-write --allow-read main.ts",
     "copy": "deno run --allow-read --allow-write copytemplate.ts"
   },
   "fmt": {

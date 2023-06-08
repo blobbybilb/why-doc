@@ -1,6 +1,7 @@
 import { Hono } from "https://deno.land/x/hono@v3.2.3/mod.ts"
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts"
 import { Doc, genDocs } from "./doc.ts"
+import { serveStatic } from "https://deno.land/x/hono/middleware.ts"
 
 const doc = Doc({
   title: "test",
@@ -35,6 +36,8 @@ app.get(
   (c) => c.text("Hello Deno!"),
 )
 
-genDocs()
+app.use("/docs", serveStatic({ path: "./docs.html" }))
+
+await genDocs("./newdocs.html")
 
 serve(app.fetch)

@@ -20,7 +20,7 @@ type DocConfig = {
 type Params = Record<string, string>
 
 export async function genDocs(outputPath = "./docs.html") {
-  if (!(Object.keys(docsData).length === 0)) return
+  if (Object.keys(docsData).length === 0) return
 
   const docs = await eta.render(template, docsData)
   await Deno.writeTextFile(outputPath, docs!)
@@ -45,15 +45,6 @@ export function Doc(config?: DocConfig) {
       getParams: params.getParams ?? {},
       postParams: params.postParams ?? {},
     }
-
-    console.log(docsData)
-
-    console.log(
-      path,
-      doctext,
-      params.getParams,
-      params.postParams,
-    )
     return path
   }
 }
