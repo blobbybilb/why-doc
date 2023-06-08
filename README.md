@@ -6,7 +6,7 @@ A simple API docs generator for simple APIs.
 
 Import:
 ```ts
-
+// (will be published to deno.land/x soon, for now download and import the file)
 ```
 
 Initialize:
