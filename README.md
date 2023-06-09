@@ -68,7 +68,6 @@ And get something like:
 <img width="400" alt="Screenshot 2023-06-08 at 2 20 44 PM" src="https://github.com/blobbybilb/why-doc/assets/58201828/f9cc1ff7-55be-443f-ada4-63d498cba145">
 
 
-
 ## License
 
 GNU LGPLv3
